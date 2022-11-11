@@ -1,0 +1,206 @@
+body{
+	background: #DDA0DD; /*цвет фона на всех страницах*/
+}
+
+/*меню сайта*/
+.menu a {
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	color: #660033;
+	text-decoration: none; /* отменил подчёркивание в гиперссылке */
+}
+
+.menu {
+	list-style-type:none; /* убирает маркеры */
+
+}
+
+footer {
+	background-color:#D3D3D3 ; /* фон футера */
+	height: 100px; /* высота футера */
+	text-align: right; /* текст выровнялся в правый угол */
+}
+footer p {
+	margin: 10px 10px; /* внешний отступ текста в футере */
+	padding-top: 10px; /*внутренний отступ*/
+}
+
+.menu a:hover {       /* при наведении курсора цвет меняется */
+    color: #DB7093;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;   /* расположение блока по центру экрана */
+
+}
+header {
+	height: 140px;
+	background: url(img/12.png) no-repeat center bottom; /* фон хедера */
+	display: flex; /* из вертикального меню в горизонтальное */
+    flex-direction: row; /* расположение слева направо*/
+    justify-content: space-between; /*свободное пространство между элементами распределилось равномерно*/
+	
+}
+
+.logotip {
+  	width: 100px;
+  	height: 100px;
+  	margin:0 0 0 25px; 
+  	vertical-align: middle; /* текст расположен по середине от логотипа */
+
+  	
+}
+
+.menu li {
+     margin: 0 10px 0 0;
+     padding: 0;
+     display: inline; /* из верт в горизонтальное */
+     float: right; /* обтекание справа */
+     text-align: left; /* выравнивание по левому краю */
+}
+
+
+.box {
+	display: inline-block; /* каталог товаров расположен горизонтально */
+  	width: 180px; 
+	background: pink;
+	margin:15px 27px 15px 27px;
+	padding: 0 0 0 5px;
+	border: 2px solid;
+	border-color: #BA55D3;
+
+}
+ 
+
+/*Страница товара*/
+
+.zagolovok {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: lightpink; /*цвет полосы, где написано описание,хар-ка,подр.описание */
+	padding: 0 0 0 5px;
+	
+	
+}
+h2{
+	overflow: hidden; /* отступ от рамки, чтоб картинка не ложилась на полосу */
+}
+
+#kratkoe_opisanie {
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+
+}
+
+.det_opisanie {
+	color: #484843;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left; /*выравнивание по левому краю*/
+	line-height: 24px;
+}
+
+.prod_charact li {
+	color: black;
+	font-family: Arial, Verdana, sans-serif;
+	font-weight: 100;
+	font-size: 14px;
+	font-style: none;
+	list-style-image: url("img/10.png");/* вместо маркера картинка */
+	/*padding-left: 20px;  */
+}
+#obtekanie {
+	float: left; /* текст с описание товара расположен слева от картинки */
+	margin-right: 10px;
+
+}
+         
+input[type="submit"] {              /* кнопка "купить" */
+	width: 80px;
+	height: 50px;
+	border: 1px solid transparent;/*прозрачность рамки*/
+	background-color: #DA70D6;
+	font-size: 15px;
+	color: black;
+	font-weight: bold;
+	margin: 0px 0 0 920px; /*расположение кнопки*/
+}
+.pokupka input[type="submit"]:hover {      /* при наведении на кнопку меняется цвет */
+	background-color: #BA55D3;      
+	
+}
+
+.ramka_img {                  /* цвет рамки */
+	border: 2px solid #4B0082;
+	width: 200px;
+
+}
+
+.ramka_img:hover{             /*при наведении на картинку с цветной рамкой она исчезает*/
+	border-color: transparent;
+}
+
+.zagl_bukva:first-letter {           /* первая буква первого слова с большой буквы */
+    color: #B22222;
+    font-size: 30px;
+}
+
+
+input{
+	text-transform: capitalize; /*каждое слово начинается с большой буквы*/
+	color: #FF1493;
+} 
+table {
+      border-collapse: collapse; /* границы таблицы одинарные */
+      margin-left:-40px;
+      width: 30%;
+  }
+th, td {
+      border: 1px solid black;
+      border: bold;
+
+}
+
+
+/*Страница КОНТАКТЫ*/
+
+.input {
+	height: 20px;
+	width: 180px;
+	color: #ff68b9;
+	font-family:Arial, Verdana, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+
+}
+
+textarea {
+	color: #ff68b9;
+	font-family:Arial, Verdana, sans-serif;
+	font-size: 14px;
+
+}
+#sms {
+	font-style: italic;
+    font-weight: bolder;
+    color: red;
+    text-transform: capitalize;  /*каждое слово начинается с большой буквы*/
+}	
+
+
+#okras:focus {    /* при наведении на текстовое поле цвет меняется */
+    background:rgb(219, 112, 147);
+    font-style: italic;
+    font-weight: bolder;
+    color: red;
+    text-transform: lowercase; /*все символы строчные*/
+}
+
+#okras{
+	text-transform: lowercase;  /*все символы строчные*/
+	font-style: italic;
+}
